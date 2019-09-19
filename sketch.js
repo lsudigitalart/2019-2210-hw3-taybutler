@@ -1,4 +1,4 @@
-function setup() {
+function draw() {
     createCanvas(1600, 1000);
     background(0,0,0);
 
@@ -11,9 +11,11 @@ function setup() {
     }
     
     //yellow
-    stroke(225,225,0);
     noFill();
     for(var n = 0; n < 1000; n = n + 20){
+        for(var m = 0; m < 50; m += 100) {
+            stroke(random(255), random(225), random(0));
+        }
         circle(800, n, 1600);
     }
 
